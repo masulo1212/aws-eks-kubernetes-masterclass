@@ -106,6 +106,14 @@ C:\Users\KALYAN\Documents\kubectlbinary
 kubectl version --short --client
 kubectl version --client
 ```
+#### 注意
+這個指令是在命令行中輸入的一組 shell 指令，用於在您的計算機上安裝 kubectl 工具。具體來說，這個指令執行以下動作：
+
+使用 mkdir -p 命令建立新目錄 $HOME/bin，-p 參數告訴 mkdir 命令如果該目錄的上層目錄不存在就建立它們。
+
+使用 cp 命令將文件 ./kubectl 複製到新建的目錄 $HOME/bin 中。
+
+使用 export 命令將系統環境變量 PATH 設置為原本的值加上 $HOME/bin。這將允許您在任意位置使用 kubectl 命令，因為系統將會在 $HOME/bin 目錄中查找可執行文件。
 
 ## Step-03: Install eksctl CLI
 ### Step-03-01: eksctl on Mac
