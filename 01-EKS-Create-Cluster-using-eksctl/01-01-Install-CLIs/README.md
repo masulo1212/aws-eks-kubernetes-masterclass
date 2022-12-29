@@ -56,6 +56,12 @@ Default output format [None]: json
 ```
 aws ec2 describe-vpcs
 ```
+#### 註解
+aws ec2 describe-vpcs 是 AWS CLI (Command Line Interface) 的一個指令，它會從 Amazon Elastic Compute Cloud (Amazon EC2) 服務中描述虛擬私有雲 (Virtual Private Cloud, VPC)。
+
+當您在 AWS 上建立 EC2 實例時，您會在 VPC 中創建實例。VPC 是一個虛擬網路，它可以讓您在 AWS 上建立和使用自己的網路架構。VPC 會提供給您控制對實例連線的能力，並且允許您在私有和公共網路之間進行選擇。
+
+使用 aws ec2 describe-vpcs 指令，您可以從 AWS 取得有關 VPC 的詳細資訊，包括 VPC 的 ID、CIDR 網址範圍、子網路、Internet Gateway 等。您可以使用此指令來取得 VPC 的摘要資訊，或者選擇性地指定特定的 VPC，以取得詳細的資訊。
 
 ## Step-02: Install kubectl CLI
 - **IMPORTANT NOTE:** Kubectl binaries for EKS please prefer to use from Amazon (**Amazon EKS-vended kubectl binary**)
